@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Decodificador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+
+    <body>
+        <main>
+            <textarea type="text" placeholder="Digite seu texto", class="entrada"></textarea>
+            <h1 class="texto-recomendacao">🛈Apenas letras minúsculas e sem acento.</h1>
+            <div class="botoes">
+                <button class="botao-criptografar">Criptografar</button>
+                <button onclick="descriptografarSaida(), descriptografarEntrada()" class="botao-descriptografar">Descriptografar</button>
+                
+            </div>
+
+            <div class="saida">
+                <img class="imagem" src="imagens/imagem-principal.png">
+                <h1 class="mensagem">
+                    <p>Nenhuma mensagem</p>
+                    <p>encontrada</p>
+                    <p class="mensagem-secundaria">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </h1>
+                <textarea readonly style="display: none;" class="area"></textarea>
+        
+                <button style="display: none;" class="botao-copiar">Copiar</button>
+            </div>
+        </main>
+
+        <footer>
+            <a href="https://www.linkedin.com/in/eduardo-alves-dev/">
+                <img class="github" src="imagens/icons8-linkedin-48.png" alt="">
+            </a>
+            <a href="https://github.com/EduardoAlvesx">
+                <img class="linkedin" src="imagens/icons8-github-48.png" alt="">
+            </a>
+            <a href="mailto:eduardostr12@gmail.com">
+                <img class="email" src="imagens/icons8-envelope-48.png" alt="">
+            </a>
+            <p class="copyright">© Copyright Eduardo Alves</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
