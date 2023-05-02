@@ -16,23 +16,23 @@ botaoCriptografa.addEventListener('click', function() {
 
 
 // Descriptografa o texto da saida
-function descriptografarSaida() {
+botaoDescriptografa.addEventListener('click', function() {
     var resultado = window.document.querySelector('textarea.area')
     var texto = resultado.innerText;
     var fraseDescriptografada = texto.replaceAll('enter', 'e').replaceAll('imes', 'i').replaceAll('ai', 'a').replaceAll('ober', 'o').replaceAll('ufat', 'u')
     resultado.innerText = fraseDescriptografada
- }
+})
+
 
  // Descriptografa o texto da entrada
- function descriptografarEntrada() {
+ botaoDescriptografa.addEventListener('click', function() {
     var frase = window.document.querySelector('textarea.entrada')
     var texto = frase.value;
     var fraseDescriptografada =  texto.replaceAll('enter', 'e').replaceAll('imes', 'i').replaceAll('ai', 'a').replaceAll('ober', 'o').replaceAll('ufat', 'u')
     var resultado = window.document.querySelector('textarea.area')
     resultado.innerText = fraseDescriptografada
- }
-
-
+ })
+ 
 
 // Faz o conteudo da saida desaparecer para aparecer o textarea
 botaoCriptografa.addEventListener("click", function() {
@@ -55,9 +55,6 @@ botaoCopiar.addEventListener('click', function() {
     Swal.fire({
         icon: 'success',
         title: 'Texto copiado para a área de transferência.',
-
-        
-
     })
 })
 
